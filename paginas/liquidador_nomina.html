@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nomina</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/nomina.js"></script>
+</head>
+
+<body class="body-nomina">
+    <div id="header">
+        <ul class="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="">Servicios</a>
+                <ul>
+                    <li><a href="./liquidador_nomina.html">Liquidador Nómina</a></li>
+                    <li><a href="./liquidador_prestaciones.html">Liquidador Prestaciones Sociales</a></li>
+                    <li><a href="./parafiscales.html">Liquidador Parafiscales</a></li>
+                </ul>
+            </li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./encuesta.html">Encuesta</a></li>
+            <li><a href="../include/login.php">Login</a></li>
+            <li><a href="../include/register.php">Registro</a></li>
+        </ul>
+    </div>
+    <section class="content">
+        <h1>LIQUIDACIÓN DE NÓMINA</h1>
+        <form method="POST" action="../include/nomina.php" name="nomina" class="form">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class="fields">
+                    <label for="">Nombres </label> <input type="text" name="nombres" id=""
+                        placeholder="Digite los nombres del empleado" required="">
+                    <label for="">Apellidos</label> <input type="text" name="apellidos" id=""
+                        placeholder="Digite los apellidos del empleado" required="">
+                    <label for="">Documento</label> <input type="text" name="documento" id=""
+                        placeholder="Digite el documento del empleado" required="">
+                    <label for="">Cargo</label> <input type="text" name="cargo" id=""
+                        placeholder="Digite el cargo del empleado" required="">
+                    <label for="">Salario </label> <input type="text" name="salario" id="salario"
+                        placeholder="Digite el salario del empleado" required="">
+                    <label for="">Días Laborados</label>
+                    <select id="dias" showSelected() name="dias_laborados">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Devengados</legend>
+                <div class="fields">
+                    <label for="">Sueldo básico  </label> <input type="text" name="basico" id="basico" readonly>
+                    <label for="">Auxilio de Transporte ($102.854 / días) </label> <input type="text" name="transporte" id="transporte"
+                        readonly>
+                    <label for="">N° Horas Extras Diurnas (25%)</label> <input type="number" min="0" id="hed" name="extraDia">
+                    <label for="">N° Horas Extras Nocturnas (75%)</label> <input type="number" min="0" id="hen" name="extraNoche">
+                    <label for="">N° Horas Extras Diurnas Festivas (25% + 75%)</label> <input type="number" min="0" id="hedf"
+                        name="extraDiaFest">
+                    <label for="">N° Horas Extras Nocturnas Festivas (75% + 75%)</label> <input type="number" min="0" id="henf"
+                        name="extraNocheFest">
+                    <label for="">Valor Total Horas Extra </label> <input type="text" id="valorhex" readonly
+                        name="totalExtra">
+                    <label for="">Otros Devegados </label> <input type="text" id="devengados" name="otrosDev" placeholder="Ingrese otros devengados">
+                    <div class="total">
+                        <label for="">Total Devengado </label> <input type="text" id="total" readonly name="totalDev">
+                    </div>
+
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Deducidos</legend>
+                <div class="fields">
+                    <label for="">EPS (4%) </label> <input type="text" id="eps" name="eps" readonly>
+                    <label for="">PENSIÓN (4%)</label> <input type="text" id="pension" name="pension" readonly>
+                    <label for="">FONDO SOLIDARIDAD (1%)</label> <input type="text" id="fondo" name="fondo" readonly>
+                    <label for="">OTROS DEDUCIDOS</label> <input type="text" id="deducidos" name="deducidos" placeholder="Ingrese otros deducidos">
+
+                    <div class="total">
+                        <label for="">TOTAL DEDUCIDOS</label> <input type="text" name="totalDeducidos"
+                            id="totaldeducidos" readonly>
+                    </div>
+
+                </div>
+                <div class="send">
+                    <input type="button" onclick="liquidar();" value="Liquidar Nómina">
+                    <input type="submit" value="Enviar Datos">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p> @Copyright Presentado por Anye Isabel Rojas - Desarrollo Web y Bases de Datos</p>
+        <p>Formador: José Fredy Vargas Martinez</p>
+     </footer>
+</body>
+</html>

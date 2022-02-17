@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prestaciones</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/prestaciones.js"></script>
+</head>
+
+<body class="body-prestaciones">
+    <div id="header">
+        <ul class="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="">Servicios</a>
+                <ul>
+                    <li><a href="./liquidador_nomina.html">Liquidador Nómina</a></li>
+                    <li><a href="./liquidador_prestaciones.html">Liquidador Prestaciones Sociales</a></li>
+                    <li><a href="./parafiscales.html">Liquidador Parafiscales</a></li>
+                </ul>
+            </li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./encuesta.html">Encuesta</a></li>
+            <li><a href="../include/login.php">Login</a></li>
+            <li><a href="../include/register.php">Registro</a></li>
+        </ul>
+    </div>
+
+    <section class="content content-prestaciones">
+        <h1>LIQUIDACIÓN DE PRESTACIONES</h1>
+
+        <form method="POST" action="../include/prestaciones.php" name="prestaciones" class="form-prestaciones">
+            <fieldset class="fieldset-prestaciones">
+                <legend>Datos Requeridos</legend>
+                <div class="fields">
+                    <h5>Elija las fechas de inicio y terminación del contrato para calcular los días trabajados</h5>
+                    <div class="dates">
+                        <label for="">Fecha Inicial</label> <input type="date" name="dateIni" value="2020-01-01"
+                            id="dateIni">
+                        <label for="">Fecha Final</label> <input type="date" name="dateEnd" value="2020-01-01"
+                            id="dateEnd">
+                    </div>
+                    <div class="main-data">
+                        <label for="">Salario</label><input type="text" name="salario" id="salario" placeholder="Digite el salario">
+                        <label for="">Dias Trabajados</label><input type="text" name="dias" id="dias" readonly>
+                    </div>
+                    <div class="results">
+                        <label for="">Cesantías</label><input type="text" name="cesantias" id="cesantias" readonly>
+                        <label for="">Intereses sobre cesantías</label><input type="text" name="intCesantias" readonly
+                            id="intCesantias">
+                        <label for="">Prima de servicios primer semestre</label><input type="text" name="primSemestre"
+                            readonly id="primSemestre">
+                        <label for="">Prima de servicios segundo semestre</label><input type="text" name="segSemestre"
+                            readonly id="segSemestre">
+                        <label for="">Vacaciones</label><input type="text" name="vacaciones" id="vacaciones" readonly>
+                        <label for="">Total Liquidación</label><input type="text" name="totalLiq" id="totalLiq"
+                            readonly>
+                    </div>
+                    <div class="prestacion-enviar">
+                        <input type="button" class="prestacion" value="Liquidar prestaciones" onclick="calcular()">
+                        <input type="submit" value="Enviar Datos">
+                    </div>
+                </div>
+            </fieldset>
+            <input type="text" name="random" id="random" class="random">
+            <script>
+                var roundIni = 1;
+                var roundFin = 10000;
+                document.getElementById('random').value = Math.round(Math.random() * (roundFin - roundIni) + parseInt(roundIni));
+            </script>
+        </form>
+    </section>
+    <footer>
+        <p> @Copyright Presentado por Anye Isabel Rojas - Desarrollo Web y Bases de Datos</p>
+        <p>Formador: José Fredy Vargas Martinez</p>
+     </footer>
+
+</body>
+
+</html>

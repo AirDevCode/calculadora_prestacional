@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Interno</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="">Nómina</a>
+                <ul>
+                    <li><a href="../include/mostrar_nomina.php">Ver Registros</a></li>
+                    <li><a href="./consultar_nomina.html">Consultar Registro</a></li>
+                    <li><a href="./eliminar_nomina.html">Eliminar Registro</a></li>
+                </ul>
+            </li>
+            <li><a href="">Prestaciones</a>
+                <ul>
+                    <li><a href="../include/mostrar_prestaciones.php">Ver Registros</a></li>
+                    <li><a href="./consultar_prestaciones.html">Consultar Registro</a></li>
+                    <li><a href="./eliminar_prestaciones.html">Eliminar Registro</a></li>
+                </ul>
+            </li>
+            <li><a href="">Parafiscales</a>
+                <ul>
+                    <li><a href="../include/mostrar_parafiscales.php">Ver Registros</a></li>
+                    <li><a href="./consultar_parafiscales.html">Consultar Registro</a></li>
+                    <li><a href="./eliminar_parafiscales.html">Eliminar Registro</a></li>
+                </ul>
+            </li>
+            <li><a href="../include/logOut.php">Salir</a></li>
+        </ul>
+    </div>
+    <section class="content">
+        <div class="wrapper-video">
+            <video src="../videos/interno.mp4" autoplay loop muted></video>
+            <span class="overlay">
+                <h1>BIENVENIDO AL SISTEMA</h1>
+                <h2>AQUÍ PODRÁ:</h2>
+                <div class="cards">
+                    <div class="card card1">
+                        <h3>NÓMINA</h3>
+                        <h4>Devengados y Deducidos del Salario del trabajador</h4>
+                        <ul>
+                            <li>Ver todos los registros.</li>
+                            <li>Consultar un registro por documento de identidad.</li>
+                            <li>Eliminar un registro por documento de identidad.</li>
+                        </ul>
+                       
+                    </div>
+                    <div class="card card2">
+                        <h3>PRESTACIONES SOCIALES</h3>
+                        <h4>Dineros adicionales al Salario del trabajador</h4>
+                        <ul>
+                            <li>Ver todos los registros.</li>
+                            <li>Consultar un registro por identificador del mismo.</li>
+                            <li>Eliminar un registro por identificador del mismo.</li>
+                        </ul>
+                    </div>
+                    <div class="card card3">
+                        <h3>PARAFISCALES</h3>
+                        <h4>Pagos obligatorios de los empleadores a entidades como:</h4>
+                        <ul>
+                            <li>Ver todos los registros.</li>
+                            <li>Consultar un registro por identificador del mismo.</li>
+                            <li>Eliminar un registro por identificador del mismo.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </span>
+        </div>
+    </section>
+    
+</body>
+
+</html>

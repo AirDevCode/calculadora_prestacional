@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomina Eliminar</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="">Nómina</a>
+                <ul>
+                    <li><a href="../include/mostrar_nomina.php">Ver Registros</a></li>
+                    <li><a href="./consultar_nomina.html">Consultar Registro</a></li>
+                    <li><a href="./eliminar_nomina.html">Eliminar Registro</a></li>
+                </ul>
+            </li>
+            <li><a href="">Prestaciones</a>
+                <ul>
+                    <li><a href="../include/mostrar_prestaciones.php">Ver Registros</a></li>
+                    <li><a href="./consultar_prestaciones.html">Consultar Registro</a></li>
+                    <li><a href="./eliminar_prestaciones.html">Eliminar Registro</a></li>
+                </ul>
+            </li>
+            <li><a href="">Parafiscales</a>
+                <ul>
+                    <li><a href="../include/mostrar_parafiscales.php">Ver Registros</a></li>
+                    <li><a href="./consultar_parafiscales.html">Consultar Registro</a></li>
+                    <li><a href="./eliminar_parafiscales.html">Eliminar Registro</a></li>
+                </ul>
+            </li>
+            <li><a href="../include/logOut.php">Salir</a></li>
+        </ul>
+    </div>
+    <section class="get-register">
+        <h1>Eliminar Registro de Nómina</h1>
+        <form method="POST" action="../include/eliminar_nomina.php">
+            <label for="">Documento de Identificación: </label>
+            <input type="text" name="documento" id="documento">
+            <input type="submit" value="Eliminar">
+        </form>
+    </section>
+
+</body>
+
+</html>

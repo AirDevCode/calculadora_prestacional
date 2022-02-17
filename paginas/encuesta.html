@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="encuesta-body">
+    <div id="header">
+        <ul class="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="">Servicios</a>
+                <ul>
+                    <li><a href="./liquidador_nomina.html">Liquidador Nómina</a></li>
+                    <li><a href="./liquidador_prestaciones.html">Liquidador Prestaciones Sociales</a></li>
+                    <li><a href="./parafiscales.html">Liquidador Parafiscales</a></li>
+                </ul>
+            </li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./encuesta.html">Encuesta</a></li>
+            <li><a href="../include/login.php">Login</a></li>
+            <li><a href="../include/register.php">Registro</a></li>
+        </ul>
+    </div>
+
+    <section class="content content-encuesta">
+        <h1>ENCUESTA DE SATISFACCIÓN</h1>
+
+        <form class="encuesta">
+            <fieldset class="fieldset-encuesta">
+                <div class="fields">
+                    <div class="questions">
+                        <h4 for="">¿Qué tan acertado fue el cálculo de la sección de nómina?</h4>
+                        <div class="option">
+                            <input type="radio" id="rb_nomina1" name="nomina" value="nomina1" checked>
+                            <label for="buena">Bueno</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="rb_nomina2" name="nomina" value="nomina2">
+                            <label for="buena">Regular</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="rb_nomina3" name="nomina" value="nomina3">
+                            <label for="buena">Malo</label>
+                        </div>
+                    </div>
+                    <div class="questions">
+                        <h4 for="">¿Que tan acertado fue el cálculo de la sección de prestaciones sociales?</h4>
+                        <div class="option">
+                            <input type="radio" id="rb_prestaciones1" name="prestaciones" value="prestaciones1" checked>
+                            <label for="buena">Bueno</label>
+
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="rb_prestaciones2" name="prestaciones" value="prestaciones2">
+                            <label for="buena">Regular</label>
+
+                        </div>
+                        <div class="option">
+
+                            <input type="radio" id="rb_prestaciones3" name="prestaciones" value="prestaciones3">
+                            <label for="buena">Malo</label>
+                        </div>
+                    </div>
+                    <div class="questions">
+                        <h4 for="">¿Que tan acertado fue el cálculo de la sección de parafiscales?</h4>
+                        <div class="option">
+                            <input type="radio" id="rb_parafiscales1" name="parafiscales" value="parafiscales1" checked>
+                            <label for="buena">Bueno</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="rb_parafiscales2" name="parafiscales" value="parafiscales2">
+                            <label for="buena">Regular</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="rb_parafiscales3" name="parafiscales" value="parafiscales3">
+                            <label for="buena">Malo</label>
+                        </div>
+                    </div>
+
+                    <div class="questions">
+                        <h4 for="">¿Recomendaría nuestro liquidador prestacional a otra persona?</h4>
+                        <div class="option">
+                            <input type="radio" id="rb_si" name="decision" value="si" checked>
+                            <label for="Si">Sí</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="rb_no" name="decision" value="no">
+                            <label for="No">No</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="rb_quiza" name="decision" value="quiza">
+                            <label for="quiza">Tal vez</label>
+                        </div>
+                    </div>
+
+                    <div class="questions">
+                        <h4 for="">Si tiene alguna sugerencia, observación o felicitación por favor descríbala a
+                            continuación</h4>
+                        <textarea name="" id="" cols="60" rows="10"></textarea>
+                    </div>
+
+                    <div class="encuesta-enviar">
+                        <input type="button" class="enviar" value="Responder Encuesta"
+                            onclick="alert('Hemos recibido la encuesta. Gracias por sus respuestas')">
+                    </div>
+                </div>
+            </fieldset>
+            <input type="text" name="random" id="random" class="random">
+            <script>
+
+            </script>
+        </form>
+    </section>
+    <footer class="parafiscales">
+        <p> @Copyright Presentado por Anye Isabel Rojas - Desarrollo Web y Bases de Datos</p>
+        <p>Formador: José Fredy Vargas Martinez</p>
+    </footer>
+</body>
+
+</html>
